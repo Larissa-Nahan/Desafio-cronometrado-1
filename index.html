@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <title>Desafio</title>
+  </head>
+  <body>
+    <div class="background">
+      <form name="form" class="container-form" onsubmit="return validateForm()">
+        <h1 class="title">Faça seua cadastro</h1>
+
+        <div class="box">
+          <label for="name-field" class="label-field">Nome completo</label>
+          <input
+            type="text"
+            class="field-input"
+            id="name-field"
+            placeholder="Digite seu nome completo"
+            required
+          />
+        </div>
+        <div class="box">
+          <label for="email-field" class="label-field">E-mail</label>
+          <input
+            type="text"
+            class="field-input"
+            id="email-field"
+            placeholder="Digite seu e-mail"
+            required
+          />
+        </div>
+        <div class="box">
+          <label for="password-field" class="label-field">Senha</label>
+          <input
+            type="password"
+            class="field-input"
+            id="password-field"
+            placeholder="Crie uma senha"
+            required
+          />
+        </div>
+        <div class="box">
+          <label for="newPassword-field" class="label-field"
+            >Confirmar senha</label
+          >
+          <input
+            type="password"
+            class="field-input"
+            id="newPassword-field"
+            placeholder="Crie uma senha"
+            required
+          />
+        </div>
+
+        <div class="terms">
+          <input type="checkbox" class="checkbox-field" required/>
+          <p>
+            Aceito os termos de uso e concordo com as
+            <a href="#" class="terms-link">políticas de privacidade</a>
+          </p>
+        </div>
+
+        <button class="button" type="submit">Cadastrar</button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
